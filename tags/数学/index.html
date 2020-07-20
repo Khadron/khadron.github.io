@@ -16,20 +16,16 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>Hexo 填坑指南 | khadron的程序人生</title>
-  <meta name="description" content="Hexo 填坑指南 hexo安装成功，并且正确运行，但是localhost:4000不能访问?   原因是： 你的电脑端口被占用了。福昕阅读器占用了4000端口，而hexo默认的端口是4000，所以他俩端口冲突了   解决方案 打开package.json文件增加如下代码： 12345//...&quot;scripts&quot;:&amp;#123;    &quot;start&quot;: &quot;hexo s -p 4666&quot;&amp;#125;,">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 填坑指南">
-<meta property="og:url" content="https://khadron.github.io/2018/02/02/Hexo-填坑指南/index.html">
+  <title>标签: 数学 | khadron的程序人生</title>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="khadron的程序人生">
+<meta property="og:url" content="https://khadron.github.io/tags/数学/index.html">
 <meta property="og:site_name" content="khadron的程序人生">
-<meta property="og:description" content="Hexo 填坑指南 hexo安装成功，并且正确运行，但是localhost:4000不能访问?   原因是： 你的电脑端口被占用了。福昕阅读器占用了4000端口，而hexo默认的端口是4000，所以他俩端口冲突了   解决方案 打开package.json文件增加如下代码： 12345//...&quot;scripts&quot;:&amp;#123;    &quot;start&quot;: &quot;hexo s -p 4666&quot;&amp;#125;,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-02T06:37:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 填坑指南">
-<meta name="twitter:description" content="Hexo 填坑指南 hexo安装成功，并且正确运行，但是localhost:4000不能访问?   原因是： 你的电脑端口被占用了。福昕阅读器占用了4000端口，而hexo默认的端口是4000，所以他俩端口冲突了   解决方案 打开package.json文件增加如下代码： 12345//...&quot;scripts&quot;:&amp;#123;    &quot;start&quot;: &quot;hexo s -p 4666&quot;&amp;#125;,">
+<meta name="twitter:title" content="khadron的程序人生">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://khadron.github.io/2018/02/02/Hexo-填坑指南/index.html">
+  <link rel="canonical" href="https://khadron.github.io/tags/数学/index.html">
   
     <link rel="alternate" href="/atom.xml" title="khadron的程序人生" type="application/atom+xml">
   
@@ -302,180 +298,51 @@
 </aside>
 
   
-  
-<main class="main" role="main">
-  <div class="content">
-  <article id="post-Hexo-填坑指南" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <main class="main" role="main">
+  <article class="content article article-tags post-type-list" itemscope="">
+    <header class="article-header">
+      <h1 itemprop="name" class="hidden-xs">标签: 数学</h1>
+      <p class="text-muted hidden-xs">共 1 篇文章</p>
+      <nav role="navigation" id="nav-main" class="okayNav">
+        <ul>
+          <li><a href="/tags">All</a></li>
+          
+          <li><a href="/tags/数学/">数学</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+    <div class="article-body">
+      <div class="row">
+        
+<div class="col-md-6">
     
-    <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo 填坑指南
-    </h1>
-  
-
-      
-      <div class="article-meta">
-        <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/02/02/Hexo-填坑指南/" class="article-date">
-	  <time datetime="2018-02-02T06:30:07.000Z" itemprop="datePublished">2018-02-02</time>
-	</a>
-</span>
-        
-        
-
-        
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/02/02/Hexo-填坑指南/#comments" class="article-comment-link">评论</a></span>
-        
-      </div>
-    </div>
-    <div class="article-entry markdown-body" itemprop="articleBody">
-      
-        <h1><span id="hexo-填坑指南">Hexo 填坑指南</span></h1>
-<h2><span id="hexo安装成功并且正确运行但是localhost4000不能访问">hexo安装成功，并且正确运行，但是localhost:4000不能访问?</span></h2>
-<ul>
-<li>
-<p>原因是：
-你的电脑端口被占用了。福昕阅读器占用了4000端口，而hexo默认的端口是4000，所以他俩端口冲突了</p>
-</li>
-<li>
-<p>解决方案
-打开package.json文件增加如下代码：
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//...</span><br><span class="line">"scripts":&#123;</span><br><span class="line">    "start": "hexo s -p 4666"</span><br><span class="line">&#125;,</span><br><span class="line">//...</span><br></pre></td></tr></table></figure></p>
-</li>
-</ul>
-<p>然后控制台执行<code>npm run start</code>命令</p>
-<h2><span id="主题页面中分类和标签点进去有cannot-get-xxx提示">主题页面中【分类】和【标签】点进去有“Cannot GET /xxx/”提示</span></h2>
-<p>解决方案：
-安装hexo-generator-json-content插件就好了，它会自动生成【分类】和【标签】的目录及文件</p>
-<h2><span id="推荐hexo插件">推荐Hexo插件</span></h2>
-<ul>
-<li><a href="https://www.npmjs.com/package/hexo-generator-json-content" target="_blank" rel="noopener">hexo-generator-json-content</a></li>
-<li><a href="https://www.npmjs.com/package/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a></li>
-</ul>
-<h2><span id="常用命令">常用命令</span></h2>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>简写</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>hexo new &quot;name&quot;</td>
-<td>hexo n &quot;name&quot;</td>
-<td>新建文章</td>
-</tr>
-<tr>
-<td>hexo generate</td>
-<td>hexo g</td>
-<td>生成博客</td>
-</tr>
-<tr>
-<td>hexo server</td>
-<td>hexo s</td>
-<td>启动服务预览</td>
-</tr>
-<tr>
-<td>hexo deploy</td>
-<td>hexo d</td>
-<td>部署</td>
-</tr>
-<tr>
-<td>hexo clean</td>
-<td></td>
-<td>清除缓存</td>
-</tr>
-<tr>
-<td>hexo new page 'name'</td>
-<td></td>
-<td>新建目录</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <div class="article-footer">
-      <blockquote class="mt-2x">
-  <ul class="post-copyright list-unstyled">
-    
-    <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
-      <a href="https://khadron.github.io/2018/02/02/Hexo-填坑指南/" title="Hexo 填坑指南" target="_blank" rel="external">https://khadron.github.io/2018/02/02/Hexo-填坑指南/</a>
-    </li>
-    
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-</blockquote>
-
-
-<div class="panel panel-default panel-badger">
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
-    <figure class="media">
-      <div class="media-left">
-        <a href="/about" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
-        </a>
-      </div>
-      <div class="media-body">
-        <h3 class="media-heading"><a href="/about" target="_blank"><span class="text-dark">khadron</span><small class="ml-1x">前端 &amp; 全栈 &amp; 相信技术改变世界</small></a></h3>
-        <div>感悟人生，实现自己的价值</div>
-      </div>
-    </figure>
-  </div>
+     <div class="article-meta">
+       <time datetime="2020-05-01T06:33:30.000Z" itemprop="datePublished">2020-05-01</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/05/01/指数与对数/">指数与对数</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/数学/" class="label label-default mb">数学</a>
+     
+   </div>
+   
+</article>
+
+
 </div>
 
-
+      </div>
     </div>
   </article>
-  
-    
-  <section id="comments">
-  	
-       
-    <div id="uyan_frame"></div>
-
-    
-  </section>
-
-
-  
-</div>
-
-  <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-  
-  <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/2018/03/14/剖析Promise原理及实现/" title="剖析Promise原理及实现"><i class="icon icon-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
-    </li>
-    
-    
-  </ul>
-  
-  
-  
-  <div class="bar-right">
-    
-    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
-    
-    
-  </div>
-  </div>
-</nav>
-  
-
-
+   
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -530,12 +397,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
-    
-        
-    
-    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
-
-
     
     
 
