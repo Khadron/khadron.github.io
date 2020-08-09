@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=zh>
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="renderer" content="webkit">
@@ -17,18 +17,17 @@
   
   
   <title>指数与对数 | khadron的程序人生</title>
-  <meta name="description" content="$x^2$ $\int_0^2 x^2 {\rm d}x$ $\log2$: $log_{10}{n}$">
-<meta name="keywords" content="数学">
+  <meta name="keywords" content="数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="指数与对数">
 <meta property="og:url" content="https://khadron.github.io/2020/05/01/指数与对数/index.html">
 <meta property="og:site_name" content="khadron的程序人生">
-<meta property="og:description" content="$x^2$ $\int_0^2 x^2 {\rm d}x$ $\log2$: $log_{10}{n}$">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-01T11:59:28.903Z">
+<meta property="og:image" content="data:image/jpeg;base64,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">
+<meta property="og:updated_time" content="2020-08-09T15:11:00.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="指数与对数">
-<meta name="twitter:description" content="$x^2$ $\int_0^2 x^2 {\rm d}x$ $\log2$: $log_{10}{n}$">
+<meta name="twitter:image" content="data:image/jpeg;base64,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">
   <!-- Canonical links -->
   <link rel="canonical" href="https://khadron.github.io/2020/05/01/指数与对数/index.html">
   
@@ -42,13 +41,15 @@
   <link rel="stylesheet" href="/css/style.css">
   
     
+        <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
     
 
 </head>
 
 
 <body class="main-center" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       
@@ -58,7 +59,7 @@
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">khadron</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">前端 &amp; 全栈 &amp; 相信技术改变世界</h3>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">用心做事，感恩做人</h3>
         <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Beijing, China</small>
       </div>
       
@@ -206,7 +207,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -218,6 +219,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/08/09/Webpack-Babel学习/" class="title">Webpack&amp;Babel学习</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-08-09T15:04:58.000Z" itemprop="datePublished">2020-08-09</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -278,21 +294,6 @@
             </div>
           </li>
           
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/异步编程/">异步编程</a>
-              </p>
-              <p class="item-title">
-                <a href="/2020/03/20/优雅的异步编程解决方案-async-await/" class="title">优雅的异步编程解决方案:async/await</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2020-03-20T02:17:36.000Z" itemprop="datePublished">2020-03-20</time>
-              </p>
-            </div>
-          </li>
-          
       </ul>
     </div>
   </div>
@@ -346,10 +347,7 @@
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <p>$x^2$
-$\int_0^2 x^2 {\rm d}x$</p>
-<p>$\log2$:
-$log_{10}{n}$</p>
+        <p><img src="data:image/jpeg;base64,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" alt="avatar"></p>
 
       
     </div>
@@ -378,7 +376,7 @@ $log_{10}{n}$</p>
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="/about" target="_blank"><span class="text-dark">khadron</span><small class="ml-1x">前端 &amp; 全栈 &amp; 相信技术改变世界</small></a></h3>
+        <h3 class="media-heading"><a href="/about" target="_blank"><span class="text-dark">khadron</span><small class="ml-1x">用心做事，感恩做人</small></a></h3>
         <div>感悟人生，实现自己的价值</div>
       </div>
     </figure>
@@ -496,5 +494,20 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
