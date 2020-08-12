@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="khadron的程序人生">
 <meta property="og:description" content="剖析 Promise 原理及实现 Promise 的是什么 Promise 字面的意思是“许诺、希望”，放到技术层面来说，它是一种异步编程解决方案。 它与语言无关，你可以根据Promise/A+规范,选用不同语言实现自己的 Promise。 Promise 能解决什么问题？  解决回调地狱问题，比如下面：  123456789101112131415161718192021222324252627">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-07-22T07:59:05.544Z">
+<meta property="og:updated_time" content="2020-08-10T14:10:35.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剖析Promise原理及实现">
 <meta name="twitter:description" content="剖析 Promise 原理及实现 Promise 的是什么 Promise 字面的意思是“许诺、希望”，放到技术层面来说，它是一种异步编程解决方案。 它与语言无关，你可以根据Promise/A+规范,选用不同语言实现自己的 Promise。 Promise 能解决什么问题？  解决回调地狱问题，比如下面：  123456789101112131415161718192021222324252627">
@@ -365,7 +365,7 @@
 </ul>
 <h4><span id="缺点">缺点</span></h4>
 <ul>
-<li>Promise 一旦创建，就会立即执行，无法取消</li>
+<li>Promise 一旦创建，就会立即全部执行，无法取消</li>
 <li>流程控制不太方便，不能跳过某些<code>then</code></li>
 <li>如果不设置回调函数，Promsie 内部抛出错误，不会反应到外部</li>
 <li>一堆 <code>then</code> 代码语义不清楚</li>
