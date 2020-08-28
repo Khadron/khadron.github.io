@@ -17,17 +17,17 @@
   
   
   <title>react-native之旅-2填坑指南 | khadron的程序人生</title>
-  <meta name="description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 12ln -s $(which node) /usr/local/bin/node">
+  <meta name="description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 1ln -s $(which node) /usr/local/bin/node">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-native之旅-2填坑指南">
 <meta property="og:url" content="https://khadron.github.io/2020/08/28/react-native之旅-2填坑指南/index.html">
 <meta property="og:site_name" content="khadron的程序人生">
-<meta property="og:description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 12ln -s $(which node) /usr/local/bin/node">
+<meta property="og:description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 1ln -s $(which node) /usr/local/bin/node">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-28T04:52:39.944Z">
+<meta property="og:updated_time" content="2020-08-28T07:28:01.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-native之旅-2填坑指南">
-<meta name="twitter:description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 12ln -s $(which node) /usr/local/bin/node">
+<meta name="twitter:description" content="Can&apos;t find &apos;node&apos; binary to build React Native bundle 原因： 使用非标准 node 安装流程造成 XCode 找不到 node 安装路经。比如，使用 nvm 安装 解： 1ln -s $(which node) /usr/local/bin/node">
   <!-- Canonical links -->
   <link rel="canonical" href="https://khadron.github.io/2020/08/28/react-native之旅-2填坑指南/index.html">
   
@@ -336,9 +336,9 @@
     <div class="article-entry markdown-body" itemprop="articleBody">
       
         <h4><span id="cant-find-node-binary-to-build-react-native-bundle">Can't find 'node' binary to build React Native bundle</span></h4>
-<p><strong>原因：</strong> 使用非标准 <code>node</code> 安装流程造成 <code>XCode</code> 找不到 <code>node</code> 安装路经。比如，使用 <code>nvm</code> 安装
-<strong>解：</strong>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ln -s $(which node) /usr/local/bin/node</span><br></pre></td></tr></table></figure></p>
+<p><strong>原因：</strong> 使用非标准 <code>node</code> 安装流程造成 <code>XCode</code> 找不到 <code>node</code> 安装路经。比如，使用 <code>nvm</code> 安装</p>
+<p><strong>解：</strong>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s $(which node) /usr/local/bin/node</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
