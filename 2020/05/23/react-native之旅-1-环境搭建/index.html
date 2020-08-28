@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="khadron的程序人生">
 <meta property="og:description" content="react native之旅-1 环境搭建   无论哪种语言或技术，环境搭建是第一步，react native也是如此。由于众所周知的原因，造成react natvie环境搭建“异常艰难”o(╥﹏╥)o   在趟了“无数”坑后，我总结成这篇博客，一来有个记录，二来留给他人参考少走弯路，以下内容都是我摸索出来的经验，无需翻墙100%可用！ react natvie 版本 0.62 安装依赖 node">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-31T01:49:57.833Z">
+<meta property="og:updated_time" content="2020-08-28T04:54:26.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react native之旅-1 环境搭建">
 <meta name="twitter:description" content="react native之旅-1 环境搭建   无论哪种语言或技术，环境搭建是第一步，react native也是如此。由于众所周知的原因，造成react natvie环境搭建“异常艰难”o(╥﹏╥)o   在趟了“无数”坑后，我总结成这篇博客，一来有个记录，二来留给他人参考少走弯路，以下内容都是我摸索出来的经验，无需翻墙100%可用！ react natvie 版本 0.62 安装依赖 node">
@@ -205,7 +205,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -217,6 +217,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/08/28/react-native之旅-2填坑指南/" class="title">react-native之旅-2填坑指南</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-08-28T04:47:44.000Z" itemprop="datePublished">2020-08-28</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -273,21 +288,6 @@
               </p>
               <p class="item-date">
                 <time datetime="2020-05-04T02:40:54.000Z" itemprop="datePublished">2020-05-04</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/数据结构/">数据结构</a>
-              </p>
-              <p class="item-title">
-                <a href="/2020/05/01/指数与对数/" class="title">指数与对数</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2020-05-01T06:33:30.000Z" itemprop="datePublished">2020-05-01</time>
               </p>
             </div>
           </li>
@@ -374,12 +374,14 @@
 <h4><span id="创建新项目">创建新项目</span></h4>
 <p>如果你之前全局安装过旧的react-native-cli命令行工具，请使用npm uninstall -g react-native-cli卸载掉它以避免一些冲突。</p>
 <p>现在初始化项目工具不需要安装<code>react-native-cli</code>，直接使用 <code>npx</code>命令（避免全局安装模块）</p>
-<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx react-native init AwesomeProject</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx react-native init AwesomeProject # AwesomeProject为你定义的项目名称</span><br></pre></td></tr></table></figure></p>
 <p>注意事项：
 如果你身处国内并执行上面的命令，那么会卡在 <code>Installing CocoaPods dependencies</code> 这一步，原因是国内访问Cocoapods/Specs特别慢，造成超时。</p>
 <p>Cocoapods新版本中即使你配置了国内镜像也没有效果，原因是你还差一步：进入自己的工程，在自己工程的podFile第一行加上：
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source 'https://gitee.com/mirrors/CocoaPods-Specs.git'</span><br></pre></td></tr></table></figure></p>
-<p>然后执行 <code>cd ./项目名/ios &amp;&amp; pod install</code> 就“万事大吉”了</p>
+<p>然后执行进入命令行</p>
+<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ./AwesomeProject/ios </span><br><span class="line"></span><br><span class="line">pod install</span><br></pre></td></tr></table></figure></p>
+<p>就“万事大吉”了</p>
 <h4><span id="编译并运行-react-native-应用">编译并运行 React Native 应用</span></h4>
 <p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd AwesomeProject</span><br><span class="line">yarn ios</span><br><span class="line"><span class="meta">#</span> 或者</span><br><span class="line">yarn react-native run-ios</span><br></pre></td></tr></table></figure></p>
 <h4><span id="最后">最后</span></h4>
